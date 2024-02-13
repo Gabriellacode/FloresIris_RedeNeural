@@ -2,7 +2,7 @@
 Projeto avaliativo desenvolvido no âmbito da disciplina de computação inteligente, no Instituto Federal de Educação, Ciência e Tecnologia (IFS). O problema escolhido foi de classificação simples para classificar a flores de íris. O objetivo foi treinar a rede neural para aprender a distinguir entre as três espécies de flores com base nas medidas das características (comprimento e largura das sépalas e pétalas).
  
 
-## **DESCRIÇÃO DO DATASET:**
+## **DESCRIÇÃO DO DATASET**
 [*Link do dataset, basta clicar*]( https://archive.ics.uci.edu/dataset/53/iris-/)
 
 Ele contém informações sobre três espécies de íris (setosa, versicolor e virginica), com quatro características medidas em cada amostra:
@@ -20,11 +20,11 @@ O conjunto de dados Iris possui 150 amostras no total, com 50 amostras para cada
 É bastante usado para demonstrar técnicas de classificação, agrupamento e visualização de dados, sendo uma referência básica para muitos algoritmos de aprendizado de máquina. Ele também é considerado um bom ponto de partida para iniciantes devido ao seu tamanho gerenciável e à clareza das informações fornecidas, o que facilita a compreensão e a prática de várias técnicas de análise de dados e aprendizado de máquina.
 
 
-### **QUAL TIPO DE REDE NEURAL UTILIZADO:**
+### **QUAL TIPO DE REDE NEURAL UTILIZADO**
   Rede neural artificial do tipo Feedforward. No nosso caso, a rede é construída usando a classe Sequential do TensorFlow, o que implica que cada camada é adicionada sequencialmente uma após a outra. Isso cria uma arquitetura de rede neural do tipo feedforward, onde a informação flui da entrada para as camadas ocultas e finalmente para a camada de saída.
 
 
-### **ESTRUTURADO DA  REDE:** 
+### **ESTRUTURADO DA  REDE** 
 Implementação em python utilizando Tensorflow/Keras. A estrutura consiste em três camadas densas:
 
 **1. Camada de Entrada:**
@@ -44,7 +44,7 @@ A terceira camada é a camada de saída com 3 neurônios, correspondendo às tr�
 É utilizado o otimizador Adam: um algoritmo de otimização muito popular em redes neurais profundas, escolhido por ser eficiente em muitos problemas. Ele ajusta a taxa de aprendizado de forma adaptativa com base nas médias dos gradientes recentes.
 
 
-### **DADOS DO EXPERIMENTO:** 
+### **DADOS DO EXPERIMENTO** 
 A acurácia final do modelo nos dados de teste é de aproximadamente 98%. Isso significa que, ao usar os dados de teste, o modelo alcança uma precisão de classificação de 98% para as amostras que não foram vistas durante o treinamento.
 Para testes foram utilizados 33% dos dados totais (⅓), e 67% foram utilizados para treinamento. Foram definidas 100 épocas e o tamanho do batch foi igual a 4.
 
